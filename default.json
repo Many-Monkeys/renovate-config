@@ -1,0 +1,19 @@
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": ["config:base", ":rebaseStalePrs"],
+  "automerge": false,
+  "timezone": "Australia/Melbourne",
+  "packageRules": [
+    {
+      "matchDatasources": ["npm"],
+      "stabilityDays": 3
+    },
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchPackagePatterns": ["*"],
+      "matchDepTypes": ["devDependencies"],
+      "automerge": true,
+      "automergeType": "branch"
+    }
+  ]
+}
