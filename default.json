@@ -9,7 +9,13 @@
       "stabilityDays": 3
     },
     {
-      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest",
+        "lockFileMaintenance"
+      ],
       "matchPackagePatterns": ["*"],
       "matchDepTypes": ["devDependencies"],
       "automerge": true,
